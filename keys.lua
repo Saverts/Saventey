@@ -1,1 +1,3 @@
-getgenv().whitelisted = {"tieteakmksmdsamdmsaklk"}
+return {
+  "tieteakmksmdsamdmsaklk"
+}
