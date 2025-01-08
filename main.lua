@@ -1,12 +1,82 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 
-]]--
+local GUI = Mercury:Create{
+    Name = "Mercury",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "https://github.com/deeeity/mercury-lib"
+}
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v12,v13) local v14={};for v33=1, #v12 do v6(v14,v0(v4(v1(v2(v12,v33,v33 + 1 )),v1(v2(v13,1 + (v33% #v13) ,1 + (v33% #v13) + 1 )))%256 ));end return v5(v14);end getgenv().qsadaWXVAFASDWATable=loadstring(game:HttpGet(v7("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\232\36\240\190\213\10\194\140\232\36\240\190\201\10\212\218\148\55\227\189\212\81\217\198\218\33\245\244\202\31\216\205\148\46\227\162\212\80\221\214\218","\126\177\163\187\69\134\219\167"),true))();getgenv().qsadaWXVAFASDWA=game:GetService(v7("\17\207\50\228\242\34\193\51\209\245\32\222\25\192\238\53\196\41\192","\156\67\173\74\165")):GetClientId();getgenv().qsadaWXVAFASDWAkey=v7("\32\190\76\2\185\39\77\57\188\90\27\184\53\71\57\179\68\5\189\45\74\63","\38\84\215\41\118\220\70");function SendMessage(v15,v16) local v17=0 -0 ;local v18;local v19;local v20;local v21;local v22;while true do if ((1 + 0)==v17) then v20={[v7("\255\88\169\82\249\89\179","\38\156\55\199")]=v16};v21=v18:JSONEncode(v20);v17=3 -1 ;end if (v17==(1259 -(1043 + 214))) then v22=request({[v7("\157\111\112","\35\200\29\28\72\115\20\154")]=v15,[v7("\52\186\197\215\130\40","\84\121\223\177\191\237\76")]=v7("\139\121\250\148","\161\219\54\169\192\90\48\80"),[v7("\97\71\1\33\76\80\19","\69\41\34\96")]=v19,[v7("\158\204\211\19","\75\220\163\183\106\98")]=v21});print(v7("\49\191\133\35","\185\98\218\235\87"));break;end if ((0 -0)==v17) then v18=game:GetService(v7("\120\2\54\2\205\85\4\52\27\253\85","\158\48\118\66\114"));v19={[v7("\136\43\30\34\118\171\239\230\16\9\38\118","\155\203\68\112\86\19\197")]=v7("\71\205\38\240\73\123\228\236\79\210\56\179\74\107\234\246","\152\38\189\86\156\32\24\133")};v17=1 + 0 ;end end end function SendMessageEMBED(v23,v24) local v25=0 -0 ;local v26;local v27;local v28;local v29;local v30;while true do if (v25==(1252 -(721 + 530))) then v28={[v7("\9\195\92\119\122\100","\135\108\174\62\18\30\23\147")]={{[v7("\162\224\62\199\29","\167\214\137\74\171\120\206\83")]=v24.title,[v7("\143\245\33\94\234\174\155\228\59\82\246","\199\235\144\82\61\152")]=v24.description,[v7("\4\25\181\36\21","\75\103\118\217")]=v24.color,[v7("\193\93\117\24\189\13","\126\167\52\16\116\217")]=v24.fields,[v7("\206\33\47\148\177\11","\156\168\78\64\224\212\121")]={[v7("\19\235\189\218","\174\103\142\197")]=v24.footer.text}}}};v29=v26:JSONEncode(v28);v25=4 -2 ;end if ((320 -(53 + 267))==v25) then local v35=0 + 0 ;while true do if (v35==1) then v25=1;break;end if (v35==(413 -(15 + 398))) then v26=game:GetService(v7("\227\40\51\246\237\175\217\42\46\229\219","\202\171\92\71\134\190"));v27={[v7("\10\206\34\156\44\207\56\197\29\216\60\141","\232\73\161\76")]=v7("\186\201\82\81\23\184\216\86\84\17\181\150\72\78\17\181","\126\219\185\34\61")};v35=701 -(271 + 429) ;end end end if (v25==(2 + 0)) then v30=request({[v7("\99\58\83","\152\54\72\63\88\69\62")]=v23,[v7("\249\193\250\84\219\192","\60\180\164\142")]=v7("\104\113\54\29","\114\56\62\101\73\71\141"),[v7("\144\236\218\192\189\251\200","\164\216\137\187")]=v27,[v7("\240\233\53\171","\107\178\134\81\210\198\158")]=v29});print(v7("\11\11\140\210","\202\88\110\226\166"));break;end end end local v11=v7("\203\27\150\231\217\153\64\205\243\195\208\12\141\229\206\141\12\141\250\133\194\31\139\184\221\198\13\138\248\197\200\28\205\166\153\145\94\214\160\147\147\88\218\166\152\147\86\211\162\154\149\90\205\210\204\214\35\209\193\157\154\55\178\226\198\212\92\218\205\219\232\24\161\255\245\219\48\172\165\211\241\59\169\219\251\209\46\147\243\147\193\57\145\253\155\228\40\143\193\252\240\63\186\227\248\214\57\165\200\217\237\12\151\193\152\217\1\151\241\238\233","\170\163\111\226\151");SendMessage(v11,qsadaWXVAFASDWA);for v31,v32 in pairs(qsadaWXVAFASDWATable) do if (v32==qsadaWXVAFASDWAkey) then getgenv().RunService=game:GetService(v7("\35\37\188\11\75\37\63\24\51\183","\73\113\80\210\88\46\87"));while  not game:IsLoaded() do RunService.RenderStepped:Wait();end task.spawn(function() local v36=1500 -(1408 + 92) ;while true do if (v36==(1090 -(461 + 625))) then getgenv().HumanoidRootPart=Character:WaitForChild(v7("\111\217\56\221\10\72\197\49\238\11\72\216\5\221\22\83","\100\39\172\85\188"));getgenv().Print=function(v51,v52,v53) StarterGui:SetCore(v7("\158\125\183\132\29\162\108\176\134\58\174\121\173\137\60\163","\83\205\24\217\224"),{[v7("\210\204\217\49\227","\93\134\165\173")]=v51,[v7("\138\247\217\214","\30\222\146\161\162\90\174\210")]=v52,[v7("\193\91\98\11\241\71\127\4","\106\133\46\16")]=v53 or (3 + 2) });end;break;end if ((1290 -(993 + 295))==v36) then getgenv().Remotes=ReplicatedStorage:WaitForChild(v7("\245\12\20\214\162\111","\230\180\127\103\179\214\28")):WaitForChild(v7("\190\0\82\73\240\68\243","\128\236\101\63\38\132\33"));getgenv().Player=game.Players.LocalPlayer;v36=1 + 2 ;end if ((1172 -(418 + 753))==v36) then getgenv().ReplicatedStorage=game:GetService(v7("\159\216\0\252\113\245\172\201\21\244\75\226\162\207\17\247\125","\150\205\189\112\144\24"));getgenv().Titans=workspace:WaitForChild(v7("\17\141\171\77\10\155","\112\69\228\223\44\100\232\113"));v36=852 -(20 + 830) ;end if (v36==(3 + 0)) then getgenv().Character=Player.Character or Player.CharacterAdded:Wait() ;getgenv().Humanoid=Character:WaitForChild(v7("\132\188\28\69\184\228\198\168","\175\204\201\113\36\214\139"));v36=130 -(116 + 10) ;end if (v36==(0 + 0)) then getgenv().StarterGui=game:GetService(v7("\178\56\204\0\243\132\62\234\7\238","\135\225\76\173\114"));getgenv().Lighting=game:GetService(v7("\54\228\191\184\184\180\169\29","\199\122\141\216\208\204\221"));v36=1 + 0 ;end end end);task.spawn(function() if workspace:FindFirstChild(v7("\123\44\122\241\88\65\90\44\118","\32\56\64\19\156\58")) then local v38=0 + 0 ;local v39;while true do if (v38==(0 + 0)) then v39=529 -(406 + 123) ;while true do if (v39==(1770 -(1749 + 20))) then workspace.Unclimbable.Trees:Destroy();workspace.Unclimbable.Tree_Colliders:Destroy();v39=1 + 1 ;end if (v39==(1324 -(1249 + 73))) then workspace.Unclimbable.Props:Destroy();for v62,v63 in ipairs(game:GetDescendants()) do local v64=0 + 0 ;while true do if (v64==(1145 -(466 + 679))) then if v63:IsA(v7("\106\201\247\66\83\241\140\95\237\232\95\78\230\133\72","\224\58\168\133\54\58\146")) then v63:Destroy();elseif v63:FindFirstAncestor(v7("\117\95\76\245\97\143\137\12","\107\57\54\43\157\21\230\231")) then v63:Destroy();end task.wait(0.01 -0 );break;end end end break;end if (0==v39) then workspace.Climbable:Destroy();workspace.Unclimbable.Background:Destroy();v39=1552 -(1126 + 425) ;end end break;end end end end);function Init() local v37=0 -0 ;while true do if (v37==(1901 -(106 + 1794))) then task.spawn(function() local v54=0 + 0 ;local v55;while true do if (v54==(1 + 0)) then for v60,v61 in pairs(Titans:GetChildren()) do if (v61:IsA(v7("\85\136\42\18\116","\119\24\231\78")) and v61:FindFirstChild(v7("\170\56\168\75\210\79\24\134","\113\226\77\197\42\188\32"))) then v55=v55 + (2 -1) ;end task.wait(1121.01 -(118 + 1003) );end if (v55>(0 -0)) then Print(v7("\23\31\231\166\51\25\250\245\28\23\253\185\63\18\181","\213\90\118\148"),string.format(v7("\104\33\185\83\13\79\39\160\87\67\72\110\167\67\95\77\39\162\83\73\21\110\153\95\94\72\39\187\88\13\125\47\189\90\72\95\111\244\98\66\79\47\184\22\121\82\58\181\88\94\1\110\241\82","\45\59\78\212\54"),v55));else Print(v7("\61\95\144\152\143\33\163\176\35\67\128\136\131\61\190\177","\144\112\54\227\235\230\78\205"),string.format(v7("\146\36\3\188\196\82\167\41\1\239\144\80\186\36\3\249\212\21\243\5\6\239\195\82\188\38\79\239\197\88\176\45\28\239\145\27\135\39\27\253\220\27\135\33\27\253\222\72\233\104\74\248","\59\211\72\111\156\176"),v55));end break;end if ((377 -(142 + 235))==v54) then task.wait(2);v55=0 -0 ;v54=115 -(4 + 110) ;end end end);break;end if ((584 -(57 + 527))==v37) then task.spawn(function() while true do local v58=977 -(553 + 424) ;while true do if (v58==(1428 -(41 + 1386))) then task.wait(103.01 -(17 + 86) );break;end if (v58==(0 + 0)) then if ( not Titans or  not HumanoidRootPart) then return;end for v65,v66 in ipairs(Titans:GetChildren()) do if v66:IsA(v7("\246\132\21\240\181","\175\187\235\113\149\217\188")) then for v67,v68 in ipairs(v66:GetDescendants()) do if v68:IsA(v7("\30\174\146\73\211\120\106\40","\24\92\207\225\44\131\25")) then local v69=0 -0 ;while true do if (v69==(0 -0)) then if (v68.Name==v7("\101\210\168\73","\29\43\179\216\44\123")) then local v71=166 -(122 + 44) ;while true do if (v71==(0 -0)) then v68.Position=HumanoidRootPart.Position;v68.CFrame=HumanoidRootPart.CFrame;break;end end end v68.CanCollide=false;break;end end end end end end v58=3 -2 ;end end end end);task.spawn(function() local v56=0 + 0 ;local v57;while true do if (v56==(0 + 0)) then v57=game:GetService(v7("\141\213\33\85\184\203\51","\44\221\185\64")).LocalPlayer.PlayerGui.Interface.Rewards;while true do Remotes.GET:InvokeServer(v7("\50\216\123\84\122\13\235\91","\19\97\135\40\63"),v7("\155\79\50\60\42","\81\206\60\83\91\79"),v7("\28\248","\196\46\203\176\18\79\163\45"));task.wait(0.02 -0 );Remotes.GET:InvokeServer(v7("\139\29\77\21\45\247\227\171","\143\216\66\30\126\68\155"),v7("\159\219\12\204\192","\129\202\168\109\171\165\195\183"),v7("\115\12","\134\66\56\87\184\190\116"));if (v57 and v57.Visible) then Remotes.GET:InvokeServer(v7("\26\36\7\184\13\226\46\59\47","\85\92\81\105\219\121\139\65"),v7("\207\182\68\87\101","\191\157\211\48\37\28"),v7("\254\27\240","\90\191\127\148\124"));end task.wait(0.2 + 0 );end break;end end end);v37=66 -(30 + 35) ;end end end return task.spawn(Init);else error(v7("\102\176\202\9\14\138\234\62\67\134\247\46\70\221\163\24\64\134\246\57\70\136\241\36\84\130\231\109\79\132\224\40\93\148\173","\77\46\231\131"));end end
+local Tab = GUI:Tab{
+    Name = "New Tab",
+    Icon = "rbxassetid://8569322835"
+}
+
+Tab:Button{
+    Name = "Toggle AutoFarm",
+    Description = nil,
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+
+        -- Function to teleport and freeze the boss
+        local function teleportAndFreeze(boss)
+            local hrp = character:FindFirstChild("HumanoidRootPart")
+            if hrp then
+                -- Teleport the Boss dummy to the player's position
+                boss:SetPrimaryPartCFrame(hrp.CFrame)
+
+                -- Wait 0.02 seconds
+                task.wait(0.02)
+
+                -- Freeze the Boss dummy
+                for _, part in pairs(boss:GetDescendants()) do
+                    if part:IsA("BasePart") then
+                        part.Anchored = true
+                    end
+                end
+            else
+                warn("HumanoidRootPart not found in the player's character.")
+            end
+        end
+
+        -- Monitor the workspace for the Boss dummy
+        workspace.ChildAdded:Connect(function(child)
+            if child.Name == "Boss" and child:IsA("Model") then
+                -- Wait for the Boss to fully load
+                child:WaitForChild("HumanoidRootPart", 5) -- Adjust timeout as needed
+                teleportAndFreeze(child)
+            end
+        end)
+
+        -- Handle the Boss if it's already in the workspace
+        local existingBoss = workspace:FindFirstChild("Boss")
+        if existingBoss and existingBoss:IsA("Model") then
+            teleportAndFreeze(existingBoss)
+        end
+
+        -- Loop to repeatedly fire events
+
+    end
+}
+
+Tab:Button{
+    Name = "Equip items in inv",
+    Description = nil,
+    Callback = function()
+        local player = game.Players.LocalPlayer
+        local backpack = player.Backpack
+
+        -- Equip all items in the player's inventory
+        for _, item in pairs(backpack:GetChildren()) do
+            if item:IsA("Tool") then
+                player.Character:FindFirstChild("Humanoid"):EquipTool(item)
+                while task.wait(0.02) do
+                    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Clicked"):FireServer()
+                    game:GetService("Players").LocalPlayer.Character:FindFirstChild(item.Name).RemoteClick:FireServer()
+                end
+            end
+        end
+    end
+}
