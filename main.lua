@@ -1,5 +1,6 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local RunService = game:GetService("RunService")
 
 local GUI = Mercury:Create{
     Name = "Mercury",
@@ -72,10 +73,10 @@ Tab:Button{
         for _, item in pairs(backpack:GetChildren()) do
             if item:IsA("Tool") then
                 player.Character:FindFirstChild("Humanoid"):EquipTool(item)
-                while task.wait(0.02) do
+                Runservice.HeartBeat:Connect(function()
                     game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Clicked"):FireServer()
                     game:GetService("Players").LocalPlayer.Character:FindFirstChild(item.Name).RemoteClick:FireServer()
-                end
+                end)
             end
         end
     end
