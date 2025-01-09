@@ -25,8 +25,14 @@ Tab:Button{
         local function teleportAndFreeze(boss)
             local hrp = character:FindFirstChild("HumanoidRootPart")
             if hrp then
-                -- Teleport the Boss dummy to the player's position
-                boss:SetPrimaryPartCFrame(hrp.CFrame)
+                -- Get the position of the player's HumanoidRootPart
+                local targetPosition = hrp.Position
+
+                -- Adjust the boss's position to stand on the same part as the player
+                local newCFrame = CFrame.new(targetPosition) * CFrame.new(0, boss.PrimaryPart.Size.Y / 2, 0)
+
+                -- Teleport the Boss dummy to the new position
+                boss:SetPrimaryPartCFrame(newCFrame)
 
                 -- Wait 0.02 seconds
                 task.wait(0.02)
@@ -56,11 +62,9 @@ Tab:Button{
         if existingBoss and existingBoss:IsA("Model") then
             teleportAndFreeze(existingBoss)
         end
-
-        -- Loop to repeatedly fire events
-
     end
 }
+
 
 Tab:Button{
     Name = "Equip items in inv",
